@@ -122,9 +122,8 @@ watch(
             :placeholder="t('search')">
         </div>
         <button @click="clearSearch()" type="button"
-          class="flex gap-1 items-center w-[80px] p-2 rounded-md cursor-pointer border-1 border-gray-200 hover:bg-gray-200">
+          class="flex gap-1 justify-center items-center p-2 rounded-md cursor-pointer border-1 border-gray-200 hover:bg-gray-200">
           <ArrowPathIcon class="size-4" />
-          {{ t('clear') }}
         </button>
       </div>
       <router-link to="/contact/create">
