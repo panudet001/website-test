@@ -180,7 +180,7 @@ watch(
             </td>
           </tr>
         </tbody>
-        <tbody v-if="paginatedData.length <= 0">
+        <tbody v-if="users.length > 0 && paginatedData.length <= 0">
           <tr>
             <td colspan="4" class="text-center p-10">
               <div class="flex flex-col gap-1 justify-center items-center">
