@@ -140,10 +140,10 @@ watch(
       <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 z-0">
         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
           <tr>
-            <th scope="col" class="px-6 py-3"> {{ t('no') }}</th>
-            <th scope="col" class="px-6 py-3"> {{ t('name') }}</th>
-            <th scope="col" class="px-6 py-3"> {{ t('age') }}</th>
-            <th scope="col" class="px-6 py-3"> {{ t('actions') }}</th>
+            <th scope="col" class="px-6 py-3 text-base"> {{ t('no') }}</th>
+            <th scope="col" class="px-6 py-3 text-base"> {{ t('name') }}</th>
+            <th scope="col" class="px-6 py-3 text-base"> {{ t('age') }}</th>
+            <th scope="col" class="px-6 py-3 text-base"> </th>
           </tr>
         </thead>
         <tbody v-if="users.length > 0">
