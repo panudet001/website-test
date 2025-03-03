@@ -13,6 +13,7 @@ const language = ref<string>('en');
 const menu = ref<string | null>(null);
 const route = useRoute();
 const dropdown = ref<string | null>(null);
+const linkMap = "https://www.google.com/maps/search/the+9+tower/@13.759485,100.5679045,18z?entry=ttu&g_ep=EgoyMDI1MDIyNi4xIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D"
 
 const userStore = useUserStore();
 
@@ -83,7 +84,7 @@ watch(() => route.path, (newPath: string) => {
                     </div>
 
                     <a class="hover:text-orange-500"
-                        href="https://www.google.com/maps/place/The+Ninth+Towers+Grand+Rama9" target="_blank">{{
+                        :href="linkMap" target="_blank">{{
                             t('current-location') }}</a>
                 </div>
 
@@ -152,7 +153,7 @@ watch(() => route.path, (newPath: string) => {
                         </div>
                     </li>
                     <li>
-                        <a href="https://www.google.com/maps/place/The+Ninth+Towers+Grand+Rama9" target="_blank"
+                        <a :href="linkMap" target="_blank"
                             class="block px-4 py-2 text-gray-700  hover:text-orange-500">
                             {{ t('current-location') }}
                         </a>
